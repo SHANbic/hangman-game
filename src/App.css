@@ -1,0 +1,10 @@
+.app{
+    text-align: center;
+}
+
+span{
+    border: 2px solid black;
+    width:30px;
+    display:inline-block;
+    margin: 2rem 2px;
+}
