@@ -2,9 +2,24 @@
     text-align: center;
 }
 
+.keyboard{
+    z-index:1;
+}
+
 span{
     border: 2px solid black;
-    width:30px;
+    width:35px;
     display:inline-block;
     margin: 2rem 2px;
+    transition: 100ms linear;
+    background:white;
+}
+
+span:hover{
+    cursor:pointer;
+    transform:rotate(5deg);
+}
+
+span:active{
+    transform: scale(2.5) rotate(-10deg);
 }

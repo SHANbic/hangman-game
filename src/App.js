@@ -4,6 +4,7 @@ import './App.css';
 
 const WORDS = ['whisky', 'symbole', 'voiture'];
 const random = Math.floor(Math.random() * WORDS.length);
+let usedLetters = [];
 
 class App extends Component {
   
@@ -19,6 +20,11 @@ class App extends Component {
   spellWord(word) {
     return word.split('');
   }
+
+  handleClick(e){
+    usedLetters.push(e.target.innerText);
+    console.log(usedLetters);
+  }
   debug(){
    // console.log(this.state.usedLetters);
     //console.log(this.state.error);
@@ -32,7 +38,7 @@ class App extends Component {
       <div className="app">
         <h1>Bienvenue dans notre jeu de pendu</h1>
         {this.hashWord(this.pickWord(random))}
-        <Keyboard />
+        <Keyboard onClick={this.handleClick}/>
       </div>
     )
   }
