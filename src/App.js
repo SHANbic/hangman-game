@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import Keyboard from './Keyboard'
 import './App.css';
 
-const WORDS = ['whisky', 'symbole', 'voiture'];
-const random = Math.floor(Math.random() * WORDS.length);
+const words = ['whisky', 'symbole', 'voiture'];
+const random = Math.floor(Math.random() * words.length);
 let usedLetters = [];
 
 class App extends Component {
   
   pickWord(index) {
-    let word = WORDS[index];
-    return word;
+    let word = words[index];
+    return word.toUpperCase();
   }
 
   hashWord(word) {
@@ -30,14 +30,14 @@ class App extends Component {
     //console.log(this.state.error);
    // console.log(this.state.randomIndex);
     //console.log(this.state.chosenWord);
-    //console.log(this.state.wordSpelled);
+    //console.log(this.state.wordspelled);
     
   }
   render() {
     return (
       <div className="app">
         <h1>Bienvenue dans notre jeu de pendu</h1>
-        {this.hashWord(this.pickWord(random))}
+        <p>{this.hashWord(this.pickWord(random))}</p>
         <Keyboard onClick={this.handleClick}/>
       </div>
     )
