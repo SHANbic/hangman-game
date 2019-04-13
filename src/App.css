@@ -8,6 +8,9 @@ p{
     font-size:2rem;
 }
 
+#hashWord{
+    letter-spacing: 5px
+}
 span{
     border: 2px solid black;
     width:40px;
@@ -35,11 +38,9 @@ span:active{
     transform: scale(2.5) rotate(-10deg);
 }
 
-
-
-@media screen and (max-width:480px){
+@media screen and (max-width:880px){
     .app{
-        width:100%;
+        width:95%;
         margin:0 auto;
     }
     span{
@@ -49,6 +50,5 @@ span:active{
         justify-content: center;
         align-items: center;
         margin: 1rem 2px;
-        font-size:1rem;
     }
 }
