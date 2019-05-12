@@ -1,3 +1,9 @@
+Welcome to a React Hangman game project found on [Openclassrooms](https://openclassrooms.com/fr/courses/4664381-realisez-une-application-web-avec-react-js).
+Down below, you'll come accross the basic readMe created with any create-react-app project.
+Don't pay attention to it if you're exclusively looking for infos about this very project.
+Have a nice day ;)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
